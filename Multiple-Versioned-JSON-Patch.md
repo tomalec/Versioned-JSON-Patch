@@ -1,5 +1,5 @@
 # Multiple Versioned JSON Patch
-> by Tomek WytrÄbowicz (Starcounter)
+> by Tomek Wytrębowicz (Starcounter)
 
 ## Abstract
 
