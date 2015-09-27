@@ -26,6 +26,9 @@
 
 <juicy-markdown ghcss id="juicyMarkdown"></juicy-markdown>
 <script>
+// For polyfilled browsers
+window.addEventListener('HTMLImportsLoaded', function() {
+  // all imports loaded
     // put content for juicy markdown, and hack links
     document.getElementById("juicyMarkdown").value =
         document.getElementById("markdownToLoad").import.body.textContent
@@ -33,6 +36,7 @@
                 /(Versioned JSON Patch]\((Multiple-)?Versioned-JSON-Patch\.)(md)\)/g,
                 '$1html)'
             );
+});
 </script>
 </body>
 </html>
