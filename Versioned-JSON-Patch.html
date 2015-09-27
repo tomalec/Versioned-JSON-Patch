@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Versioned JSON Patch</title>
+
+  <link rel="stylesheet" href="http://juicy.github.io/juicy-tile-list/examples/github-markdown.css">
+  <script src="http://juicy.github.io/webcomponentsjs/webcomponents.js"></script>
+  <link rel="import" href="http://juicy.github.io/juicy-html/juicy-html.html">
+  <link rel="import" href="http://juicy.github.io/juicy-markdown/juicy-markdown.html">
+  <link id="markdownToLoad" rel="import" href="Versioned-JSON-Patch.md">
+  <style>
+    body, body.markdown-body {
+      font-family: Helvetica, Arial, sans-serif;
+      color: #333;
+      padding: 2em;
+      overflow: auto;
+    }
+    iframe{
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+  </style>
+</head>
+<body class="markdown-body">
+<iframe src="http://ghbtns.com/github-btn.html?user=tomalec&amp;repo=Versioned-JSON-Patch&amp;type=star&amp;count=true&amp;size=medium" allowtransparency="true" frameborder="0" scrolling="0" width="90" height="30"></iframe>
+
+<juicy-markdown ghcss id="juicyMarkdown"></juicy-markdown>
+<script>
+    document.getElementById("juicyMarkdown").value = document.getElementById("markdownToLoad").import.body.textContent;
+</script>
+</body>
+</html>
